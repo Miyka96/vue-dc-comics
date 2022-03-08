@@ -60,7 +60,7 @@ ul {
   li {
     padding: 0 12px;
 
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 12px;
 
     a {
