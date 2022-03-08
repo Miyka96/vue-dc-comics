@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
-    <Footer/>
+    <VueHeader/>
+    <VueMain/>
+    <VueFooter/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Main from './components/Main.vue';
-import Footer from './components/Footer.vue';
+import VueHeader from './components/VueHeader.vue';
+import VueMain from './components/VueMain.vue';
+import VueFooter from './components/VueFooter.vue';
 
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Main,
-    Footer
+    VueHeader,
+    VueMain,
+    VueFooter
   }
 }
 </script>
