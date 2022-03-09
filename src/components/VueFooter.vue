@@ -10,9 +10,7 @@
         </li>
       </ul>
 
-      <figure>
-        <img src="" alt="">
-      </figure>
+      <figure></figure>
     </div>
   </div>
 </template>
@@ -71,6 +69,11 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
 }
 
+.container{
+  display: flex;
+  height: 450px;
+}
+
 ul {
   display: flex;
   width: 45%;
@@ -97,5 +100,14 @@ ul {
     &:hover{
         color: white;
     }
+}
+
+figure{
+  background-image: url("../assets/img/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 55%;
 }
 </style>
