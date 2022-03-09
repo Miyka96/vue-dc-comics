@@ -26,20 +26,28 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'League Gothic', sans-serif;
+  font-size:18px;
+  font-weight: 300;
 }
 .container-fluid{
   width: 100%;
   min-height: 100px;
+  margin: 0 auto;
 }
 
 .container{
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 li{
   list-style: none;

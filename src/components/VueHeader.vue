@@ -74,6 +74,7 @@ export default {
   display: flex;
   align-items: center;
   height: 110px;
+  justify-content: space-around;
 }
 
 figure {
@@ -91,6 +92,7 @@ ul {
   height: 100%;
   align-items: center;
   border-bottom: 4px solid white;
+  justify-content: center;
 
   li {
     padding: 0 12px;

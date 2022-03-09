@@ -67,11 +67,13 @@ export default {
 .container-fluid {
   min-height: 300px;
   background-image: url("../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container{
   display: flex;
-  height: 450px;
+  height: 500px;
 }
 
 ul {
@@ -82,17 +84,16 @@ ul {
   padding: 30px 0;
 
   li {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 }
 
 #title {
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 3px;
 }
 
 #list-items{
-    font-size: 12px;
     color: grey;
     cursor: pointer;
     padding: 3px 0;
