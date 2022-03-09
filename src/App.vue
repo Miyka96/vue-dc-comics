@@ -3,6 +3,7 @@
     <VueHeader/>
     <VueMain/>
     <VueFooter/>
+    <vueFooterSocial/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import VueHeader from './components/VueHeader.vue';
 import VueMain from './components/VueMain.vue';
 import VueFooter from './components/VueFooter.vue';
+import VueFooterSocial from './components/VueFooterSocial.vue'
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     VueHeader,
     VueMain,
-    VueFooter
+    VueFooter,
+    VueFooterSocial,
   }
 }
 </script>

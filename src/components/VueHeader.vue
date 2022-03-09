@@ -6,16 +6,9 @@
       </figure>
       <div class="nav">
         <ul>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
-          <li><a href="#"> list item </a></li>
+          <li v-for="(el,i) in links" :key="i">
+            <a :href="el.href" :class=" el.active ? 'active' : '' "> {{el.text}} </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -28,7 +21,49 @@ export default {
 
   data() {
     return {
-      text: "header here",
+      links: [
+        {
+          text: "CHARACTERS",
+          href: "#",
+        },
+        {
+          text: "COMICS",
+          href: "#",
+          active: true,
+        },
+        {
+          text: "MOVIES",
+          href: "#",
+        },
+        {
+          text: "TV",
+          href: "#",
+        },
+        {
+          text: "GAMES",
+          href: "#",
+        },
+        {
+          text: "COLLECTIBLES",
+          href: "#",
+        },
+        {
+          text: "VIDEOS",
+          href: "#",
+        },
+        {
+          text: "FANS",
+          href: "#",
+        },
+        {
+          text: "NEWS",
+          href: "#",
+        },
+        {
+          text: "SHOP",
+          href: "#",
+        },
+      ],
     };
   },
 };
@@ -42,7 +77,7 @@ export default {
 }
 
 figure {
-  width: 30%;
+  width: 20%;
 }
 
 .nav {
@@ -64,12 +99,12 @@ ul {
     font-size: 12px;
 
     a {
-        color: rgb(61, 61, 61);
-        padding-bottom: 45px;
-        padding-top: 40px;
-        font-weight: 700;
+      color: rgb(61, 61, 61);
+      padding-bottom: 45px;
+      padding-top: 40px;
+      font-weight: 700;
 
-      &:hover {
+      &:hover, &.active {
         border-bottom: 4px solid blue;
         color: blue;
       }
